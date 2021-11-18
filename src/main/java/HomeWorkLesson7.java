@@ -5,9 +5,26 @@ public class HomeWorkLesson7 {
     public static void main(String[] args) {
         //stringComparing1();
         //stringComparing2();
-        //StringBuilderExampl();
+        //StringBuilderExample();
+        //catsAndBowls();
+        //fightExample();
+    }
+//бой
+private static  void fightExample(){
+Fighter fighter1 = new Fighter("Scorpion", 100,10);
+        Fighter fighter2 = new Fighter("cat", 50,8);
+        while (true){
+            fighter1.hit(fighter2);
+            if(!fighter2.isAlive()) {break;}
+            fighter2.hit(fighter1);
+            if (!fighter1.isAlive()){break;}
+        }
 
-        //Массив из котов
+
+    }
+
+    //Массив из котов они обращаются к методу миска и едят
+    private static  void catsAndBowls(){
         Cat[] cats = {
                 new Cat("Barsik", 100),
                 new Cat("Murzik", 150),
@@ -18,13 +35,9 @@ public class HomeWorkLesson7 {
         bowl.putFood(600);
         for (Cat  cat: cats){
             cat.eat(bowl);
-        }
+        }}
 
-
-    }
-
-
-private static void StringBuilderExampl(){
+private static void StringBuilderExample(){
     //вариант 1 - за какое время при опред условии к строке ++ 9000 раз индекс
     //если строка изменяется 1-9 раз
     String s1 = "Exampl";
