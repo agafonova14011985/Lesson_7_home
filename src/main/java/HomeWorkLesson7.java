@@ -7,9 +7,9 @@ public class HomeWorkLesson7 {
         //stringComparing2();
         //StringBuilderExample();
         //catsAndBowls();
-        fightExample();
+        //fightExample();
     }
-
+//бой
 private static  void fightExample(){
 Fighter fighter1 = new Fighter("Scorpion", 100,10);
         Fighter fighter2 = new Fighter("cat", 50,8);
